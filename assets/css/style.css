@@ -800,3 +800,22 @@ body.active {
 .top-rated .filter-btn:focus::before { left: 0; }
 
 .top-rated .filter-btn:focus::after { right: 0; }
+
+
+
+
+
+/*-----------------------------------*\
+ * #TV SEREIS
+\*-----------------------------------*/
+
+.tv-series {
+    background: url("../images/tv-series-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: var(--section-padding);
+}
+
+.tv-series .section-title {
+    margin-block-end: 50px;
+}
