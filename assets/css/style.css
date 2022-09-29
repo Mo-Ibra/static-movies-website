@@ -797,9 +797,13 @@ body.active {
     height: 15px;
 }
 
-.top-rated .filter-btn:focus::before { left: 0; }
+.top-rated .filter-btn:focus::before {
+    left: 0;
+}
 
-.top-rated .filter-btn:focus::after { right: 0; }
+.top-rated .filter-btn:focus::after {
+    right: 0;
+}
 
 
 
@@ -819,3 +823,75 @@ body.active {
 .tv-series .section-title {
     margin-block-end: 50px;
 }
+
+
+
+
+
+/*-----------------------------------*\
+ * #CTA
+\*-----------------------------------*/
+
+.cta {
+    background: url("../images/cta-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-block: 50px;
+}
+
+.cta .title-wrapper {
+    margin-block-end: 25px;
+}
+
+.cta-title {
+    color: var(--eerie-black);
+    font-size: var(--fs-3);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-block-end: 5px;
+}
+
+.cta-text {
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+    line-height: 1.8;
+}
+
+.email-field {
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    padding: 18px 32px;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.2);
+    margin-block-end: 15px;
+    outline: none;
+}
+
+.cta-form-btn {
+    background: var(--eerie-black);
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--eerie-black);
+    padding: 15px 34px;
+    border-radius: 4px;
+    margin-inline: auto;
+    transition: var(--transition-1);
+}
+
+.cta-form-btn:is(:hover, :focus) {
+    background: var(--citrine);
+    color: var(--eerie-black);
+}
+
+
+
+
+
+/*-----------------------------------*\
+ * #FOOTER
+\*-----------------------------------*/
