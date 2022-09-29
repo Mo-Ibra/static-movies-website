@@ -1025,3 +1025,140 @@ body.active {
     visibility: visible;
     opacity: 1;
 }
+
+
+
+
+
+/*-----------------------------------*\
+ * #MOVIE DETAIL 
+\*-----------------------------------*/
+
+.movie-detail {
+    background: url("../images/movie-detail-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block-start: 160px;
+    padding-block-end: var(--section-padding);
+}
+
+.movie-detail-banner {
+    position: relative;
+    background-color: var(--gunmetal-1);
+    max-width: 300px;
+    margin-inline: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-block-end: 50px;
+}
+
+.movie-detail-banner img {
+    max-width: max-content;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 120px;
+    color: var(--white);
+    transition: var(--transition-1);
+}
+
+.play-btn:hover {
+    background: hsla(0, 0%, 0%, 0.25);
+}
+
+.detail-subtitle {
+    font-size: var(--fs-5);
+    color: var(--citrine);
+    font-weight: var(--fw-700);
+    margin-bottom: 10px;
+}
+
+.detail-title {
+    margin-bottom: 20px;
+}
+
+.detail-title strong {
+    color: var(--citrine);
+}
+
+.movie-detail .meta-wrapper {
+    margin-block-end: 30px;
+}
+
+.storyline {
+    color: var(--gray-x);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+    line-height: 1.8;
+    margin-block-end: 40px;
+}
+
+.details-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    max-width: 460px;
+    background-color: var(--gunmetal-2);
+    padding: 25px;
+    border: 1px solid var(--jet);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.details-actions .share ion-icon {
+    font-size: 25px;
+    color: var(--white);
+    margin-inline: auto;
+}
+
+.details-actions .share span {
+    color: var(--gainsboro);
+    font-size: var(--fs-11);
+    transition: var(--transition-1);
+}
+
+.details-actions .share:is(:hover, :focus) span {
+    color: var(--citrine);
+}
+
+.details-actions .title {
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
+
+.details-actions .text {
+    font-size: var(--fs-11);
+    color: var(--gainsboro);
+}
+
+.details-actions .btn-primary {
+    font-size: 10px;
+    padding: 13px 26px;
+    letter-spacing: 0;
+    background-color: transparent;
+}
+
+.details-actions .btn-primary:is(:hover, :focus) { background: var(--citrine); }
+
+.download-btn {
+    width: max-content;
+    background: var(--citrine);
+    color: var(--rich-black-fogra-29);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 35px;
+    letter-spacing: 5px;
+}
+
+.download-btn ion-icon { font-size: 16px; }
