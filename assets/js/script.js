@@ -28,3 +28,14 @@ for (let i = 0; i < navbarLinks.length; i++) {
         document.body.classList.toggle('active');
     })
 };
+
+
+// Make Header Sticky & Go Top Button
+
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener('scroll', function() {
+    this.scrollY >= 10 ? header.classList.add('active') : header.classList.remove('active');
+    this.scrollY >= 500 ? goTopBtn.classList.add('active') : goTopBtn.classList.remove('active');
+});
