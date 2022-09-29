@@ -23,9 +23,11 @@ const navbarLinks = document.querySelectorAll('.navbar-list li');
 
 for (let i = 0; i < navbarLinks.length; i++) {
     navbarLinks[i].addEventListener('click', function() {
-        navbar.classList.toggle('active');
-        overlay.classList.toggle('active');
-        document.body.classList.toggle('active');
+        if (overlay.classList.contains('active')) {
+            navbar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.classList.toggle('active');
+        }
     })
 };
 

@@ -1440,3 +1440,197 @@ body.active {
         --fs-1: 50px;
     }
 }
+
+
+
+
+
+/**
+ * responsive for large than 992px screen
+*/
+
+@media (min-width: 992px) {
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 960px;
+    }
+
+
+    /* MOVIE CARD */
+
+    .movies-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /**
+    * HEADER
+    */
+
+    .header.active {
+        padding-block: 5px;
+    }
+
+    .menu-open-btn,
+    .navbar-top,
+    .navbar-social-list {
+        display: none;
+    }
+
+    .navbar {
+        all: unset;
+        margin-left: auto;
+    }
+
+    .header-actions {
+        order: 1;
+        margin-left: unset;
+    }
+
+    .navbar-list {
+        all: unset;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-link {
+        border-bottom: none;
+        font-size: var(--fs-9);
+        font-weight: var(--fw-700);
+        text-transform: uppercase;
+        padding: 30px 15px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+
+
+    /**
+    * HERO
+    */
+
+    .hero {
+        background-position: right;
+    }
+
+    .hero .container {
+        width: 950px;
+    }
+
+    .hero-content {
+        margin-top: 100px;
+        max-width: 600px;
+    }
+
+    /**
+    * UPCOMING
+    */
+
+    .upcoming .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .upcoming :is(.section-subtitle, .section-title) {
+        text-align: left;
+    }
+
+    .upcoming .section-title {
+        margin-bottom: 0;
+    }
+
+    .upcoming .movies-list>li {
+        min-width: calc(33.33% - 20px);
+    }
+
+
+    /**
+    * SERVICE
+    */
+
+    .service .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .service-content {
+        padding-inline: 0;
+        width: calc(100% - 470px);
+    }
+
+    .service-banner {
+        margin-bottom: 0;
+    }
+
+    .service-btn {
+        right: 111px;
+    }
+
+    /**
+    * CTA
+    */
+
+    .cta {
+        text-align: left;
+    }
+
+    .cta .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta .title-wrapper {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .cta-form {
+        margin-inline: 0;
+        max-width: unset;
+        width: 100%;
+    }
+
+    /**
+    * MOVIE DETAIL
+    */
+
+    .movie-detail {
+        padding-bottom: 200px;
+    }
+
+    .movie-detail .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .movie-detail-banner,
+    .details-actions {
+        margin: 0;
+    }
+
+    .download-btn {
+        position: absolute;
+        left: 15px;
+        bottom: -80px;
+    }
+}
+
+
+
+
+
+/**
+ * responsive for large than 1200px screen
+ */
