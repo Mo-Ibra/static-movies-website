@@ -1633,4 +1633,123 @@ body.active {
 
 /**
  * responsive for large than 1200px screen
- */
+*/
+
+@media (min-width: 1200px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+
+        /**
+        * typography
+        */
+
+        --fs-1: 60px;
+        --fs-4: 26px;
+
+    }
+
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 1320px;
+    }
+
+    /* MOVIE CARD */
+
+    .movies-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /**
+    * HEADER
+    */
+
+    .navbar {
+        margin-inline: auto;
+    }
+
+    .header-actions .btn-primary {
+        display: block;
+        --fs-11: 14px;
+        padding: 10px 35px;
+        letter-spacing: 1px;
+    }
+
+    /**
+    * HERO
+    */
+
+    .hero .container {
+        width: 1320px;
+    }
+
+    /**
+    * UPCOMING
+    */
+
+    .upcoming .movies-list>li {
+        min-width: calc(25% - 22.5px);
+    }
+
+    /**
+    * SERVICE
+    */
+
+    .service-content {
+        width: calc(100% - 700px);
+    }
+
+    .service-btn {
+        right: -20px;
+    }
+
+    .service-list,
+    .service-title {
+        max-width: 480px;
+    }
+
+    /**
+    * CTA
+    */
+
+    .cta .container {
+        max-width: 1150px;
+    }
+
+    /**
+    * MOVIE DETAIL
+    */
+
+    .movie-detail {
+        padding-bottom: var(--section-padding);
+    }
+
+    .movie-detail-content {
+        max-width: 620px;
+    }
+
+    .detail-title {
+        --fs-1: 60px;
+    }
+
+    .download-btn {
+        left: auto;
+        right: 15px;
+        bottom: 0;
+        transform: rotate(0.25turn) translateY(100%);
+        transform-origin: bottom right;
+        padding: 40px 50px;
+    }
+
+    .download-btn ion-icon {
+        font-size: 30px;
+        transform: rotate(-0.25turn);
+    }
+}
